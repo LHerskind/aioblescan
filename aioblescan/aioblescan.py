@@ -1279,7 +1279,7 @@ def create_bt_socket(interface=None):
     try:
         sock = socket.socket(family=socket.AF_BLUETOOTH,
                              type=socket.SOCK_RAW,
-                             proto=socket.BTPROTO_HCI)
+                             proto=socket.BTPROTO_HCI) 
         sock.setblocking(False)
         if platform.system() == "Linux":
             sock.setsockopt(socket.SOL_HCI, socket.HCI_FILTER, pack("IIIh2x", 0xffffffff,0xffffffff,0xffffffff,0)) #type mask, event mask, event mask, opcode

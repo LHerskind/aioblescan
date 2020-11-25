@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
 import setuptools
-version="0.2.6"
+version="0.2.7"
 
 with open("README.rst", "r") as fh:
     long_description = fh.read()
@@ -29,6 +29,7 @@ setuptools.setup(name='aioblescan',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7'
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8'
     ],
     zip_safe=False)
